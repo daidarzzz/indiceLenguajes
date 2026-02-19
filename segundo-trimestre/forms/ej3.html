@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>FORMULARIO DE INSCRIPCIÓN A CURSO</h1>
+
+    <form action="" method="post">
+
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="turno">Turno: </label><br>
+            <input type="radio" id="mañana" name="horario" value="mañana">
+            <label for="mañana">Mañana</label>
+            <input type="radio" id="tarde" name="horario" value="tarde">
+            <label for="tarde">Tarde</label>
+        </p>
+
+        <p>
+            <label for="turno">Modalidad: </label><br>
+            <input type="radio" id="presencial" name="modalidad" value="presencial">
+            <label for="mañana">Presencial</label>
+            <input type="radio" id="online" name="modalidad" value="online">
+            <label for="tarde">Online</label>
+        </p>
+
+        <p>
+            <label for="asignaturas">Asignaturas: </label><br>
+            <input type="checkbox" id="programacion" name="programacion" value="programacion">
+            <label for="programacion"> Programación</label><br>
+            <input type="checkbox" id="bbdd" name="bbdd" value="Bases de Datos">
+            <label for="bbdd"> Bases de Datos</label><br>
+            <input type="checkbox" id="lenguajes" name="lenguajes" value="Lenguaje de Marcas">
+            <label for="lenguajes"> Lenguaje de Marcas</label>
+        </p>
+
+        <p>
+            <label for="observaciones">Observaciones</label> <br>
+            <textarea name="observaciones" id="observaciones" minlength="100"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">ENVIAR</button>
+            <button type="reset">LIMPIAR</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>

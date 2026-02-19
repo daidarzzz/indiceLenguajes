@@ -1,0 +1,110 @@
+@font-face {
+    font-family: VAMPIRE;
+    src: url(./fonts/vampire.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #343434;
+}
+
+body {
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    margin: 20px;
+}
+h2 {
+    font-family: VAMPIRE;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #3b6800;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #c6ff7b;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 15px;
+    flex-wrap: wrap;
+
+}
+
+.enlace-nav {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #3b6800;
+    transition: 0.2s;
+}
+
+.enlace-nav:hover {
+    color: #61ab00;
+}
+
+#banner {
+    width: 100%;
+}
+.imagenes-de-skates {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.img-skate img {
+    width: 100%;
+}
+
+footer {
+    background-color: #c6ff7b;
+    padding: 15px;
+}
+
+#contenido-carta {
+    display: flex;
+    gap: 20px;
+}
+#imagenes-de-la-carta {
+    width: 40%;
+}
+#tabla-de-la-carta {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.imagen-carta img {
+    width: 100%;
+}
+caption {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+table {
+    margin: 0 auto;
+}
+tr, td {
+    border: 2px solid rgb(51, 235, 0);
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    nav ul, #contenido-carta, .imagenes-de-skates {
+        flex-direction: column;
+        text-align: center;
+    }
+    #imagenes-de-la-carta {
+        width: 100%;
+    }
+
+}
+

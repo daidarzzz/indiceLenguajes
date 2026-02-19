@@ -1,0 +1,24 @@
+*{margin: 0px; padding: 0px;}
+body
+{
+background-color:#99ccff; /*color de fondo de la página*/
+font-family: “courier 'Courier New', Courier, monospace, "Times New Roman", serif;
+color:#FF0000; /*color de fuente, rojo RGB*/
+font-size: 18px;
+}
+p
+{
+color:#336699; /*color azul*/
+font-family: Verdana, arial, sans-serif;
+font-size: 15px;
+text-align: justify;
+}
+h1 {color: #ccff00;} /*color verde*/
+a
+{
+color:#ffffff; /*color blanco*/
+font-family: arial, sans-serif;
+font-size: 20px;
+font-weight: bold; /*negrita*/
+text-decoration: none; /*enlaces sin subrayado*/
+}

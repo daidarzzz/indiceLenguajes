@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-top: 20px;
+    background: #689cf1;
+}
+
+header {
+    background: #f1f1f1;
+}
+
+header img {
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+    overflow: hidden;
+    /*para que el section crezca a la vez que las cajas*/
+}
+
+nav {
+    background: #f76414;
+    padding: 10px 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font: bold 15px verdana, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #bcc0c6;
+}
+
+#banner {
+    width: 95%;
+    margin: 10px;
+}
+
+/*monitores normales tamaño 1000px*/
+@media(min-width: 1024px) and (max-width: 1920px) {
+    #pagina {
+        width: 1000px;
+    }
+}
+
+/*monitores grandes 24, 25, 27, 32'' tamaño 2000px*/
+@media(min-width: 2560px) {
+    #pagina {
+        width: 2000px;
+    }
+}
+
+/*monitores antiguos y móviles*/
+@media(max-width: 800px) {
+    #pagina {
+        width: 95%;
+    }
+}
+
+.estilo-pagina {
+    margin: auto;
+    background: #ffffff;
+}
+
+footer {
+    background: #f76414;
+    font: bold 13px verdana, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    /*para que el footer se ponga por debajo de las cajas*/
+}
+
+.normal {
+    font: 14px verdana, sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    /*interlineado*/
+}
+
+.titulo {
+    font: bold 18px verdana, sans-serif;
+    color: #f76414;
+    line-height: 30px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff5f5;
+    padding: 30px;
+}
+
+.elemento-texto {
+    width: 55%;
+}
+
+.elemento-foto {
+    width: 43%;
+}
+
+.lista {
+    margin-left: 40px;
+}
+
+.Contenedor-listado {
+    margin-top: 20px;
+}
+
+#foto-contacto {
+    margin-top: 100px;
+    flex-direction: row;
+}

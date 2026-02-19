@@ -1,0 +1,51 @@
+body {
+  margin: 10px;
+  background-color: #ccff99;
+}
+
+@font-face {
+  font-family: janda;
+  src: url("./fuentes/JandaManateeSolid.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("./fuentes/AvenirCondensedHand.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("./fuentes/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+
+header {
+  font-family: janda;
+  font-size: 60px;
+  background-color: #cc3300;
+  padding: 20px;
+  color: white;
+}
+
+
+.titulo {
+  font-family: roboto;
+  font-size: 25px;
+  font-weight: bold;
+  color: #cc33cc;
+  padding: 5px;
+  border: 2px solid red;
+}
+
+
+.texto {
+  font-family: avenir;
+  font-size: 15px;
+}
+
+.precios {
+  font-family: verdana;
+  font-size: 20px;
+  color: #666600;
+  font-weight: bold;
+}

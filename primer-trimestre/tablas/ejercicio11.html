@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Tabla Combinada</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        td {
+            border: 2px solid #0000FF;
+            padding: 10px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>celda1 normal</td>
+            <td>celda2 normal</td>
+            <td colspan="2">celda3 combinada2</td>
+        </tr>
+        <tr>
+            <td>celda4 normal</td>
+            <td colspan="2">celda5 combinada2</td>
+            <td rowspan="2">celda6 combinada2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">celda7 combinada3</td>
+            <td>celda8 normal</td>
+            <td>celda9 normal</td>
+        </tr>
+        <tr>
+            <td colspan="3">celda10 combinada3</td>
+        </tr>
+        <tr>
+            <td colspan="4">celda11 combinada3</td>
+        </tr>
+    </table>
+</body>
+</html>

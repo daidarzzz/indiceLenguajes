@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>FORMULARIO DE DATOS PERSONALES</h1>
+
+    <form action="resultado.php" method="post">
+
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+
+        </p>
+
+        <p>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </p>
+
+        <p>
+            <label for="fecha">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha">
+        </p>
+
+        <p>
+            <label for="email">Correo electronico:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="telefono">Telefono:</label><br>
+            <input type="tel" id="telefono" name="telefono">
+        </p>
+
+         <p>
+            <label for="hermanos">Número de hermanos:</label><br>
+            <input type="number" id="hermanos" name="hermanos">
+        </p>
+
+        <p>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </p>
+    </form>
+
+</body>
+
+</html>

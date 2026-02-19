@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13 - Tabla de Demanda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 800px;
+        }
+        
+        th, td {
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .header-green {
+            background-color: #009900;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .header-periodo {
+            background-color: #009900;
+            color: white;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .subheader {
+            background-color: #D8BFD8;
+            font-size: 12px;
+        }
+        
+        .demanda-alta {
+            background-color: #E6E6FA;
+        }
+        
+        .demanda-media {
+            background-color: #D8BFD8;
+        }
+        
+        .demanda-ordinaria {
+            background-color: #DDA0DD;
+        }
+        
+        .demanda-baja {
+            background-color: #D8BFD8;
+        }
+        
+        .tipo-demanda {
+            background-color: #90EE90;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" class="header-green">TEMPORADA<br>PERIODO DE<br>LA DEMANDA</th>
+                <th colspan="2" class="header-periodo">NOVIEMBRE A<br>MARZO</th>
+                <th colspan="2" class="header-periodo">ABRIL A JUNIO</th>
+                <th colspan="2" class="header-periodo">JULIO Y<br>AGOSTO</th>
+                <th colspan="2" class="header-periodo">SEPTIEMBRE Y<br>OCTUBRE</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="subheader"></th>
+                <th class="subheader">Tasa<br>Ocupación</th>
+                <th class="subheader">Bar<br>Tarifa<br>Base</th>
+                <th class="subheader">Tasa<br>Ocupación</th>
+                <th class="subheader">Bar<br>Tarifa<br>Base</th>
+                <th class="subheader">Tasa<br>Ocupación</th>
+                <th class="subheader">Bar<br>Tarifa<br>Base</th>
+                <th class="subheader">Tasa<br>Ocupación</th>
+                <th class="subheader">Bar<br>Tarifa<br>Base</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" class="tipo-demanda">Demanda alta</td>
+                <td class="demanda-alta">>75%</td>
+                <td class="demanda-alta">230<br>205<br>160</td>
+                <td class="demanda-alta">>45%</td>
+                <td class="demanda-alta">230<br>215<br>195</td>
+                <td class="demanda-alta">>85%</td>
+                <td class="demanda-alta">235<br>235<br>215</td>
+                <td class="demanda-alta">>45%</td>
+                <td class="demanda-alta">230<br>255<br>165</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tipo-demanda">Demanda<br>media</td>
+                <td class="demanda-media">65%</td>
+                <td class="demanda-media">160<br>175<br>185</td>
+                <td class="demanda-media">75%</td>
+                <td class="demanda-media">215<br>205<br>180</td>
+                <td class="demanda-media">85%</td>
+                <td class="demanda-media">235<br>225<br>200</td>
+                <td class="demanda-media">55%</td>
+                <td class="demanda-media">190<br>175<br>165</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tipo-demanda">Demanda<br>ordinaria</td>
+                <td class="demanda-ordinaria">65%</td>
+                <td class="demanda-ordinaria">150<br>170<br>150</td>
+                <td class="demanda-ordinaria">45%</td>
+                <td class="demanda-ordinaria">180<br>175<br>165</td>
+                <td class="demanda-ordinaria">75%</td>
+                <td class="demanda-ordinaria">210<br>195<br>185</td>
+                <td class="demanda-ordinaria">55%</td>
+                <td class="demanda-ordinaria">190<br>175<br>168</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tipo-demanda">Demanda baja</td>
+                <td class="demanda-baja">=50%</td>
+                <td class="demanda-baja">140<br>110<br>75</td>
+                <td class="demanda-baja">=55%</td>
+                <td class="demanda-baja">150<br>130<br>115</td>
+                <td class="demanda-baja">=65%</td>
+                <td class="demanda-baja">170<br>160<br>135</td>
+                <td class="demanda-baja">=55%</td>
+                <td class="demanda-baja">140<br>130<br>115</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

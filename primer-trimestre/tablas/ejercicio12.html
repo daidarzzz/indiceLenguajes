@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Tabla de Masajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .logos {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .logos img {
+            height: 50px;
+            margin: 0 10px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 600px;
+        }
+        
+        th {
+            background-color: #228B22;
+            color: white;
+            padding: 10px;
+            border: 1px solid #000;
+            font-weight: bold;
+        }
+        
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .relajante {
+            background-color: #FFFACD;
+        }
+        
+        .descontracturante {
+            background-color: #DDA0DD;
+        }
+        
+        .ayurveda {
+            background-color: #F0E68C;
+        }
+        
+        .circulatorio {
+            background-color: #DDA0DD;
+        }
+        
+        .reflexologia {
+            background-color: #90EE90;
+        }
+        
+        .ninos {
+            background-color: #FFFACD;
+        }
+        
+        .pack {
+            background-color: #F0E68C;
+        }
+        
+        .holistico {
+            background-color: #DDA0DD;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>TIPO DE MASAJE</th>
+                <th>TIEMPO</th>
+                <th>PRECIO</th>
+                <th>PACKS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="relajante">Relajante</td>
+                <td class="relajante">30 min</td>
+                <td class="relajante">40€</td>
+                <td class="relajante">2 por 70€</td>
+            </tr>
+            <tr>
+                <td class="relajante">1 hora</td>
+                <td class="relajante">70€</td>
+                <td class="relajante">2 por 120€</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="descontracturante">Descontracturante</td>
+                <td class="descontracturante">40 min</td>
+                <td class="descontracturante">45€</td>
+                <td class="descontracturante">2 por 80€</td>
+            </tr>
+            <tr>
+                <td class="descontracturante">1 hora</td>
+                <td class="descontracturante">70€</td>
+                <td class="descontracturante">2 por 120€</td>
+            </tr>
+            <tr>
+                <td class="ayurveda">Ayurveda</td>
+                <td class="ayurveda">1 hora</td>
+                <td class="ayurveda">70€</td>
+                <td class="ayurveda">2 por 120€</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="circulatorio">Circulatorio DLM</td>
+                <td class="circulatorio">30 min</td>
+                <td class="circulatorio">40€</td>
+                <td class="circulatorio">2 por 70€</td>
+            </tr>
+            <tr>
+                <td class="circulatorio">1 hora</td>
+                <td class="circulatorio">70€</td>
+                <td class="circulatorio">2 por 120€</td>
+            </tr>
+            <tr>
+                <td class="reflexologia">Reflexología podal</td>
+                <td class="reflexologia">30 min</td>
+                <td class="reflexologia">35€</td>
+                <td class="reflexologia">2 por 60€</td>
+            </tr>
+            <tr>
+                <td class="ninos">Para niños</td>
+                <td class="ninos">20 min</td>
+                <td class="ninos">20€</td>
+                <td class="ninos">2 por 35€</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="pack">Pack familiar</td>
+                <td class="pack">30 min</td>
+                <td class="pack">80€</td>
+                <td rowspan="2" class="pack">Precio para 2 adultos y 1 niño</td>
+            </tr>
+            <tr>
+                <td class="pack">1 hora</td>
+                <td class="pack">140€</td>
+            </tr>
+            <tr>
+                <td class="holistico">Holístico</td>
+                <td class="holistico">1 hora</td>
+                <td class="holistico">75€</td>
+                <td class="holistico">2 por 120€</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

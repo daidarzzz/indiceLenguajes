@@ -1,0 +1,32 @@
+
+
+body {
+    margin-top: 30px;
+    background-color: #ff99cf;
+    /*color de fondo de la página*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+p {
+    color: #ca7d00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #00ff04;
+    text-align: center;
+}
+
+/*color verde*/
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white; 
+    text-decoration: none; 
+}

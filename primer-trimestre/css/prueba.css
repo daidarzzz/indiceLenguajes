@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.submenu {
+    text-decoration: none;
+}
+
+.submenu:hover {
+    color: red;
+}
+
+main {
+    background: orange;
+    padding: 10px 80px;
+    font: bold 15px verdana, calibri;
+    position: relative;
+}
+
+main ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+main li ul {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    list-style: none;
+    margin-left: -10px;
+    top: 38px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+main li:hover ul { 
+    height:200px;
+}
+
+main li ul li { 
+    background-color: #ff5733; padding: 15px;
+}
+main li ul li:hover { 
+    background-color: #444; 
+}
+main ul li a { 
+    text-decoration: none;
+}
+main li ul a
+{
+color:#fff;
+text-decoration:none;
+} 

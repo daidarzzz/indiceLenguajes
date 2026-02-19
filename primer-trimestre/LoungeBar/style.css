@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: rgb(77, 77, 255);
+}
+
+@font-face {
+  font-family: VAMPIRE;
+  src: url("./fonts/vampire.ttf");
+}
+
+body {
+  background-color: rgb(179, 0, 0);
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-family: VAMPIRE;
+  color: rgb(179, 0, 0);
+  font-size: 2.2em;
+}
+
+.parrafo {
+  color: rgb(179, 0, 0);
+  font-size: 1.1em;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 255, 0);
+}
+
+#logo {
+  width: 100%;
+}
+
+#img-inicio {
+  width: 95%;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contenido-concepto {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+#concepto-1 {
+  width: 60%;
+}
+
+#concepto-2 {
+  width: 40%;
+}
+
+.img-concepto {
+  width: 100%;
+}
+
+.contenido-carta {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+#carta-1 {
+  width: 50%;
+}
+
+#carta-2 {
+  width: 50%;
+}
+
+#horario-1 {
+  display: flex;
+  width: 100%;
+}
+
+.textos-horario {
+  width: 50%;
+
+}
+.imagen-horario img {
+  width: 100%;
+}
+
+.contenido-ubicacion {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.textos-ubicacion {
+  width: 30%;
+}
+
+.imagen-ubicacion {
+  width: 70%;
+}
+
+.imagen-ubicacion img {
+  width: 100%;
+}
+
+.contenido-contacto {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.textos-contacto {
+  width: 46%;
+}
+
+.imagen-contacto {
+  width: 54%;
+}
+
+.imagen-contacto img {
+  width: 100%;
+}
+footer {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+
+  .contenido-concepto,
+  .contenido-carta,
+  .contenido-ubicacion,
+  #horario-1,
+  .contenido-contacto {
+    flex-direction: column;
+  }
+
+  #concepto-1,
+  #concepto-2,
+  #carta-1,
+  #carta-2,
+  .textos-ubicacion,
+  .imagen-ubicacion,
+  .textos-contacto,
+  .imagen-contacto {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="bot">CLICK PLS</button>
+
+
+
+    <script>
+        document.getElementById("bot").onclick = function() {
+
+            numero1 = prompt("INTRODUCE NÚMERO 1: ")
+
+            numero2 = prompt("INTRODUCE NÚMERO 2: ")
+
+            suma = suma(numero1, numero2)
+
+            alert("El resultado es " + suma)
+
+        };
+
+        function suma(numero1, numero2) {
+
+            return parseInt(numero1)+parseInt(numero2);
+
+        }
+      
+    </script>
+</body>
+</html>

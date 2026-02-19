@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        *{
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            margin-top: 30px;
+            background-image: url("../../img/background-p2.jpg");
+            background-size: cover;
+        }
+        table {
+            font-family: arial, sans-serif;
+            width: 200px;
+            border: 3px solid #000000;
+            padding: 20px;
+            background-color: #ffffff;
+        
+        }
+
+
+        tr:nth-child(even) {
+            background-color: #ff9e9e;
+        }
+
+        #ingresos {
+            background-color: #ff5c5c;
+            font-weight: bold;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Factura de tienda de informática</h2>
+    
+    <table name="facturas-informatica" border="1">
+        <tr>
+            <th>ID Cliente</th>
+            <th>Producto</th>
+            <th>Marca</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Ordenador portátil</td>
+            <td>Asus</td>
+            <td>800€</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Ratón inalámbrico</td>
+            <td>Logitech</td>
+            <td>20€</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Teclado mecánico</td>
+            <td>Redragon</td>
+            <td>50€</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Monitor 24"</td>
+            <td>Samsung</td>
+            <td>150€</td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>Disco duro externo 1TB</td>
+            <td>Seagate</td>
+            <td>60€</td>
+        </tr>
+        <tr>
+            <td id="ingresos" colspan="3">Ingresos totales</td>
+            <td>1080€</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
