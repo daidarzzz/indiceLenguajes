@@ -10,18 +10,18 @@ h1 {
     font-size: 4em;
 }
 main {
-
     text-align: center;
 
 }
 
 button {
-    background-color: #034fb2;
+    background: linear-gradient(135deg, #4019ff, #5f0eff);
+    transition: all 0.3s ease;
     padding: 25px;
-    border: 2px solid white;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 50px;
     transition: 0.1s;
+    border-style: none;
     color: white;
     font-weight: bold;
     font-size: 1.5em;
@@ -30,6 +30,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #003983;
+    background: linear-gradient(135deg, #9b4eff, #a828e9);
+
 
 }
