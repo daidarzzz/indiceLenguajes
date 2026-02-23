@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+<body>
+
+    <h2>Ejercicio 4</h2>
+    <img id="imagen" src="./img/i2.png" width="200">
+
+    <h2>Ejercicio 5</h2>
+    <button id="btnIntro">Introducción</button>
+    <button id="btnDesa">Desarrollo</button>
+    <button id="btnConc">Conclusión</button>
+
+    <div id="contenedor">Haz clic en un botón para ver el texto</div>
+
+    <script>
+        let imagen = document.getElementById("imagen");
+        let contador = 0;
+        imagen.addEventListener("click", function() {
+            if (contador == 0) {
+                imagen.src = "./img/i3.png";
+                contador = 1;
+            } else {
+                imagen.src = "./img/i2.png";
+                contador = 0;
+            }
+        });
+
+        let cajaTexto = document.getElementById("contenedor");
+
+        document.getElementById("btnIntro").addEventListener("click", function() {
+            cajaTexto.textContent = "Este es el texto de la Introducción.";
+        });
+
+        document.getElementById("btnDesa").addEventListener("click", function() {
+            cajaTexto.textContent = "Aquí va el contenido del Desarrollo.";
+        });
+
+        document.getElementById("btnConc").addEventListener("click", function() {
+            cajaTexto.textContent = "Y finalmente, la Conclusión de la página.";
+        });
+    </script>
+
+</body>
+</html>

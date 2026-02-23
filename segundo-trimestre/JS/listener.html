@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<p>Click the button to display the date.</p>
+<button onmouseover="displayDate(1)">The time is? (mouse over)</button>
+<button onmouseout="displayDate(0)">The time is? (mouse out)</button>
+
+<script>
+function displayDate(number) {
+
+  if (number == 1) {
+    document.getElementById("demo").innerHTML = Date() + "  -> Mouse over sirve para ejecutar la función cuando el ratón está encima del objeto que hace el listener";
+  } else {
+    document.getElementById("demo").innerHTML = Date() + "  -> Mouse out sirve para ejeceutar la función cuando el ratón sale del objeto que hace el listener";
+  }
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html>

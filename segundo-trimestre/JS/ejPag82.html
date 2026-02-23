@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Ejercicio 6</h2>
+    <button id="btnSize">Tamaño</button>
+    <button id="btnColor">Color</button>
+    <button id="btnOscuro">Modo Oscuro</button>
+    <button id="btnMayus">Mayúsculas</button>
+    <button id="btnReset6">Restaurar</button>
+
+    <p id="parrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde eos sunt. Odit in minima est hic veritatis. Fuga blanditiis natus recusandae eveniet velit vero cupiditate aliquid nulla cum culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit recusandae sed consequatur asperiores fugit, laboriosam repellat rem placeat totam. Perferendis, ipsam minus. Aut rem placeat et! Alias nemo ipsum modi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolorem eum id minima. Quod facilis dolores veniam quia quaerat repellat iste, pariatur recusandae nesciunt explicabo nemo excepturi ex laudantium dolore.lore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni reiciendis at quas impedit dicta fugiat, eaque cumque ea praesentium similique alias aspernatur rem, amet fugit distinctio eveniet, delectus nemo ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia necessitatibus provident eaque voluptatibus repellat, neque repudiandae esse ad tempora, accusamus accusantium maiores, vero architecto voluptates incidunt nam autem repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aspernatur vero eveniet consequatur, magnam ut, nostrum soluta necessitatibus alias ab ducimus praesentium voluptatum similique adipisci dignissimos architecto dicta perspiciatis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, doloremque natus. Eveniet consequuntur repudiandae ducimus numquam tenetur dicta doloribus, corporis sapiente quo animi veniam consectetur magnam quasi modi qui nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ipsum sint! Earum, nihil magnam odio perspiciatis deleniti vel illum eos eum nulla maxime dignissimos molestiae repellat quas veniam quae atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni quia atque dolorem voluptas, quis ipsa omnis animi quidem illo ratione error, suscipit laudantium molestias quaerat modi sint pariatur at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut quae dicta repellendus rem cumque voluptate hic commodi ullam officiis, veritatis corporis officia maxime corrupti doloremque facilis modi necessitatibus iure? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, cupiditate unde impedit deleniti vitae pariatur. Enim et eveniet, laboriosam tenetur, dolorum reiciendis obcaecati animi minima voluptate recusandae, voluptatum placeat dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse qui, sequi accusantium minus earum non eaque natus vitae facere tempore delectus rerum, incidunt atque impedit exercitationem quod numquam iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat est distinctio amet. Molestias cumque nobis suscipit unde quia fuga placeat reprehenderit, eius id inventore expedita delectus dignissimos nesciunt commodi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quidem ad aliquam at dolore est! Neque quaerat ex facere veniam odio? Nam, quibusdam! Perferendis delectus ut consequuntur maxime impedit vero?
+    </p>
+
+    <hr />
+
+    <h2>Ejercicio 7</h2>
+    <div
+      id="cuadrado"
+      style="width: 100px; height: 100px; background-color: blue"
+    ></div>
+    <br />
+
+    <input type="color" id="eligeColor" />
+    <input type="range" id="eligeRango" min="50" max="300" />
+
+    <button id="btnRedondo">Redondear</button>
+    <button id="btnVer">Mostrar/Ocultar</button>
+    <button id="btnReset7">Reset Cuadrado</button>
+
+    <script>
+      const texto = document.getElementById("parrafo");
+      const textoMinusculas = texto.textContent;
+
+      document.getElementById("btnSize").onclick = () =>
+        (texto.style.fontSize = "30px");
+
+      document.getElementById("btnColor").onclick = () =>
+        (texto.style.color = "red");
+
+      document.getElementById("btnOscuro").onclick = () => {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      };
+
+      document.getElementById("btnMayus").onclick = () =>
+        (texto.textContent = texto.textContent.toUpperCase());
+
+      document.getElementById("btnReset6").onclick = () => {
+        texto.style = "";
+        document.body.style = "";
+        texto.textContent = textoMinusculas;
+      };
+
+      const caja = document.getElementById("cuadrado");
+
+      document.getElementById("eligeColor").oninput = function () {
+        let colorElegido = document.getElementById("eligeColor").value;
+        caja.style.backgroundColor = colorElegido;
+      };
+
+      document.getElementById("eligeRango").oninput = function () {
+        let tamanoElegido = document.getElementById("eligeRango").value;
+        caja.style.width = tamanoElegido + "px";
+        caja.style.height = tamanoElegido + "px";
+      };
+
+      document.getElementById("btnRedondo").onclick = () => {
+        caja.style.borderRadius = "50%";
+      };
+
+      document.getElementById("btnVer").onclick = () => {
+        if (caja.style.display === "none") {
+          caja.style.display = "block";
+        } else {
+          caja.style.display = "none";
+        }
+      };
+
+      document.getElementById("btnReset7").onclick = () => {
+        caja.style = "width: 100px; height: 100px; background-color: blue;";
+      };
+    </script>
+  </body>
+</html>

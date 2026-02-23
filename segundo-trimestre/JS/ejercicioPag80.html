@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        img {
+            width: 200px;
+            margin: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Encabezado H1</h1>
+    <p id="parrafo1">Este es el primer párrafo (inicial).</p>
+    
+    <img id="imagen" src="../../img/banner.png" alt="Imagen de ejemplo">
+    
+    <p id="parrafo2">Este es el segundo párrafo que se puede esconder.</p>
+
+    <button id="btnEjercicio1">Ejercicio 1: Ampliar y centrar</button>
+    <button id="btnEjercicio2">Ejercicio 2: Esconder segundo párrafo</button>
+    <button id="btnEjercicio3">Ejercicio 3: Traducir a inglés</button>
+
+    <script>
+        document.getElementById("btnEjercicio1").addEventListener("click", () => {
+            let p1 = document.getElementById("parrafo1");
+            p1.style.fontSize = "36px";
+            p1.style.textAlign = "center";
+        });
+
+        document.getElementById("btnEjercicio2").addEventListener("click", () => {
+            document.getElementById("parrafo2").style.display = "none";
+        });
+
+        document.getElementById("btnEjercicio3").addEventListener("click", () => {
+            document.getElementById("titulo").textContent = "H1 Header";
+            document.getElementById("parrafo1").textContent = "This is the first paragraph (initial).";
+            document.getElementById("parrafo2").textContent = "This is the second paragraph that can be hidden.";
+            document.getElementById("btnEjercicio1").textContent = "Exercise 1: Enlarge and center";
+            document.getElementById("btnEjercicio2").textContent = "Exercise 2: Hide second paragraph";
+            document.getElementById("btnEjercicio3").textContent = "Exercise 3: Translate to English";
+        });
+    </script>
+
+</body>
+</html>
