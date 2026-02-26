@@ -9,6 +9,8 @@ function ejercicio32() {
     let valor = "123abc"
     let numero = parseInt(valor)
     alert("El resultado es " + numero)
+
+
 }
 
 function ejercicio33_1() {

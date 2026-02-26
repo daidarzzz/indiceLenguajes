@@ -14,7 +14,8 @@
         <h1>EJERCICIOS JAVASCRIPT</h1>
 
        
-        <button class="butPro" onclick= ejercicio20()>Ejercicio 20</button>
+        <button class="butPro" id="but20" onclick= ejercicio20()>Ejercicio 20</button>
+        <p id="procito"></p>
         <button class="butPro" onclick = ejercicio32()>EJERCICIO 32</button>
         <button class="butPro" onclick = ejercicio33_1()>EJERCICIO 33 (Tipos de datos)</button>
         <button class="butPro" onclick = ejercicio33_2()>EJERCICIO 33 (Calculadora)</button>
@@ -49,6 +50,18 @@
         
     </main>
 
-    <script src="./main.js"></script>
+    <script>
+        let but20 = document.getElementById("but20");
+        but20.addEventListener("mouseover", parrafo)
+        let procito = document.getElementById("procito");
+        but20.addEventListener("mouseout", function() {
+            procito.textContent = "";
+        })
+
+        function parrafo() {
+            document.getElementById("procito").textContent = "Puta zorra"
+        }
+
+    </script>
 </body>
 </html>
