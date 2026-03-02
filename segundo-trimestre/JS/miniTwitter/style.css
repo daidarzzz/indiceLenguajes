@@ -19,6 +19,14 @@ nav {
     align-items: center;
 }
 
+.tweet {
+
+    background-color: #3c3c3c;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 50px;
+}
+
 main {
     margin: 10px;
     padding: 10px;
